@@ -115,9 +115,6 @@ const FormulaireUtilisateur = () => {
                                           <option value="owner">Propriétaire</option>
                                         </select>
                                         </div>
-                                                            
-                                
-    
                                         </div>
                                         </div>
                                         <div className="col-md-5">
@@ -127,9 +124,6 @@ const FormulaireUtilisateur = () => {
                                         </div>
 
                                     </div>
-
-                                    
-
                                     <div className="mt-4">
                                         <button type="submit" className="btn btn-primary w-md">
                                         Enregistrer

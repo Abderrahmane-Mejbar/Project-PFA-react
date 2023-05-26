@@ -77,7 +77,16 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a href="apps-calendar.html">
+            <a href="/Utilisateurs">
+              <i className="bx bx-user-pin icon nav-icon"></i>
+              <span className="menu-item" data-key="t-calendar">
+                Liste des utilisateurs
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/FormulaireUtilisateur">
               <i className="bx bx-user-pin icon nav-icon"></i>
               <span className="menu-item" data-key="t-calendar">
                 Gestion des utilisateurs

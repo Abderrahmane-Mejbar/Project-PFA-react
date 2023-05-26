@@ -113,7 +113,8 @@ const Dashboard = () => {
                                     weekends={false}
                                     events={[
                                         { title: 'Examen de Java', date: '2023-05-19' },
-                                        { title: 'Examen de Oracle', date: '2023-05-22' }
+                                        { title: 'Examen de Oracle', date: '2023-05-22' },
+                                        { title: 'Examen de JEE', date: '2023-06-02' }
                                     ]}
                                     />
                       </div>

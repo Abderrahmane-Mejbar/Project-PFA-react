@@ -1,27 +1,6 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
+
 export default function SignIn() {
-    const navigate = useNavigate();
-    const [error, setError] = React.useState(false);
-    const handleSubmit = async (event) => {
-      event.preventDefault();
-      const data = new FormData(event.currentTarget);
-      console.log({
-        email: data.get("email"),
-        password: data.get("password"),
-      });
-      const response = await axios.post("http://localhost:8080/users/login", {
-        email: data.get("email"),
-        password: data.get("password"),
-      });
-      if (response.data.error === undefined) {
-        localStorage.setItem("userdata", response.data);
-        navigate("/dashboard");
-      } else {
-        setError(true);
-      }
-    };
   return (
     <div className="authentication-bg min-vh-100">
     <div className="bg-overlay"></div>
@@ -34,7 +13,7 @@ export default function SignIn() {
             <div className="card">
               <div className="card-body p-4">
                 <div className="text-center mt-2">
-                  <h5 className="text-primary">Application Localisation des restaurants</h5>
+                  <h5 className="text-primary">Application de Gestion des Examens</h5>
                   <h5 className="text-muted">Sign in</h5>
                 </div>
                 <div className="p-2 mt-4">
@@ -86,9 +65,6 @@ export default function SignIn() {
                         Log In
                       </button>
                     </div>
-
-                 
-
                     <div className="mt-4 text-center">
                       <p className="mb-0">
                       Vous n'avez pas de compte ?{' '}
